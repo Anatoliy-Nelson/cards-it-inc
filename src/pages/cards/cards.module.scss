@@ -1,0 +1,48 @@
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+.linkBack {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 33px;
+
+  .title {
+    margin-right: 16px;
+  }
+}
+
+.deckImage {
+  width: 170px;
+  height: 107px;
+  margin-top: 15px;
+
+  background-position: center;
+  background-size: cover;
+  border-radius: 2px;
+}
+
+.input {
+  margin-top: 25px;
+  margin-bottom: 24px;
+}
+
+.pagination {
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: default;
+  color: var(--color-light-900);
+  background-color: var(--color-accent-900);
+}

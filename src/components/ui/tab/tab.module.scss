@@ -1,0 +1,54 @@
+.tabsRoot {
+  .tabsList {
+    .tabsTrigger {
+      all: unset;
+
+      cursor: pointer;
+
+      align-items: center;
+
+      box-sizing: border-box;
+      height: 36px;
+      padding: 6px 24px;
+
+      text-align: center;
+      vertical-align: center;
+
+      background: transparent;
+      border: 1px solid var(--color-dark-300);
+      border-left: none;
+
+      &:first-child {
+        border-left: 1px solid var(--color-dark-300);
+        border-radius: 2px 0 0 2px;
+      }
+
+      &:last-child {
+        border-radius: 0 2px 2px 0;
+      }
+
+      &:focus-visible {
+        border-color: transparent;
+        outline: 2px solid var(--color-info-700);
+      }
+
+      &:hover {
+        background-color: var(--color-dark-300);
+      }
+
+      &[data-state='active'] {
+        background-color: var(--color-accent-500);
+      }
+
+      &:disabled {
+        cursor: initial;
+        background-color: var(--color-dark-700);
+        outline-color: var(--color-dark-300);
+
+        .title {
+          color: var(--color-dark-300);
+        }
+      }
+    }
+  }
+}

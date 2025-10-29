@@ -1,0 +1,27 @@
+.viewport {
+  background-color: var(--color-dark-700);
+}
+
+.wrapper {
+  padding: 24px 0;
+
+  .select {
+    button,
+    .viewport {
+      background-color: var(--color-dark-700);
+    }
+  }
+}
+
+.wrapperForm {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-bottom: 12px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
+}

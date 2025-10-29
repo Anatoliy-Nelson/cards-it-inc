@@ -1,0 +1,23 @@
+.buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: end;
+
+  .button {
+    display: flex;
+    align-items: center;
+
+    .icon {
+      cursor: pointer;
+
+      &.disabled {
+        cursor: initial;
+
+        path {
+          fill: var(--color-dark-100);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.wrapper {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  .image {
+    display: inline-flex;
+    align-items: center;
+
+    width: 75px;
+    height: 40px;
+
+    background-position: center;
+    background-size: cover;
+    border-radius: 2px;
+
+    .title {
+      display: inline-flex;
+      flex-shrink: 0;
+      margin-left: 118px;
+    }
+  }
+}
+
+.textCell {
+  max-width: 300px;
+  word-break: break-all;
+}
+
+.disabled {
+  pointer-events: none;
+  text-decoration: none;
+}
